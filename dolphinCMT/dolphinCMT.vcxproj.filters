@@ -21,6 +21,12 @@
     <ClCompile Include="sfr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sfr_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sfr_rio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sfr.h">

@@ -308,7 +308,7 @@ bool SFRCalculation(cv::Mat &ROI, double gamma)
 
 	int height = ROI.rows, width = ROI.cols;
 	//Do the gamma decoding to eliminate the gamma encoded by camera device 
-	de_Gamma(ROI, gamma);
+	//de_Gamma(ROI, gamma);
 	int i, j;
 
 	double slope = 0, intercept = 0;
@@ -353,16 +353,16 @@ bool SFRCalculation(cv::Mat &ROI, double gamma)
 
 	for (int i = 0; i < SamplingLen; ++i) { OverSamplingData[i] /= maxData; }
 
-	std::fstream mtf_file("./ref/mtf.csv", std::ios::out);
+	//std::fstream mtf_file("./ref/mtf.csv", std::ios::out);
 	
 	for (i = 0; i <= width; ++i)
 	{
-		double frequency = (double)i / width;
-		mtf_file << frequency << "," << OverSamplingData[i] << "\n";
+		//double frequency = (double)i / width;
+		//mtf_file << frequency << "," << OverSamplingData[i] << "\n";
 		std::cout << OverSamplingData[i] << std::endl;
 	}
 
-	mtf_file.close();
+	//mtf_file.close();
 	
 	return true;
 }

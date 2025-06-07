@@ -7,8 +7,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sfr_data.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sfr.cpp" />
+    <ClCompile Include="sfr_rio.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sfr.h" />
